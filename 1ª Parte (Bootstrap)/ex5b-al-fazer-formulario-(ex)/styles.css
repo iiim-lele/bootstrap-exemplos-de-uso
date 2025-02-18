@@ -1,0 +1,33 @@
+/* Importação de fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+h1 {
+    margin-bottom: 20px;
+    /* fonte baixada do google fonts */
+    font-family: "Quicksand", serif;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.custom-form {
+    /* deixa degrade */
+    background: linear-gradient(145deg, pink, palevioletred );
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.custom-icon {
+    background-color: rgba(184, 75, 117, 0.470);
+    border: rgb(211, 65, 114);
+}
+
+.btn.btn-warning.custom-button {
+    background: rgb(211, 65, 114);
+    padding: 0.8rem 2rem;
+    border-radius: 15px;
+    border: none;
+}
+
+.btn.btn:hover {
+    background: rgb(163, 50, 88);
+}
