@@ -1,0 +1,174 @@
+/* define uma fonte padrão para todos os elementos */
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* estilos gerais para o corpo da página */
+body {
+    /* cor de fundo do corpo */
+    background-color: #252525;
+    /* cor do texto */
+    color: #FFF;
+}
+
+/* classes para diferentes cores de fundo */
+.primary-bg-color {
+    background-color: #252525;
+}
+
+.destaque {
+    background-color: #0D0D0D;
+}
+
+.secondary-bg-color {
+    background-color: #976DF2;
+}
+
+.light-bg-color {
+    background-color: #FCF5EB;
+}
+
+.dark-bg-color {
+    background-color: #0D0D0D;
+}
+
+/* classes para diferentes cores de texto*/
+.primary-color {
+    color: #976DF2;
+}
+
+.secondary-color {
+    color: #F2F2F2;
+}
+
+.light-color {
+    color: #FCF5EB;
+}
+
+/* _______________________________________ */
+/* estilos para a barra de navegação */
+
+/* ajusta a direção e alinhamento dos itens da barra de navegação */
+#navbar .navbar-nav {
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+/* define margem a esquerda para os itens da navbar */
+#navbar .nav-nav li {
+    margin-left: 1em;
+}
+
+/* define a cor do texto e links do navbar */
+#navbar a,
+#navbar button {
+    color: #FFF;
+}
+
+/* ajusta a posição dos itens da navbar */
+#navbar li {
+    position: relative;
+}
+
+/* define estilo para icones na navbar */
+#navbar i {
+    font-size: 20px;
+}
+
+/* define estilo de cor quando o mouse passa sobre o icone */
+#navbar i:hover {
+    color: #976DF2;
+}
+
+/* define estilo para caixa com número (ex: quantidade de itens) */
+#navbar span {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #EF3636;
+    text-align: center;
+}
+
+/* posiciona a caixa com número no item de sacola de compras */
+#bag-item span {
+    left: 20px;
+}
+
+/* estilos para a marca/logo do navbar */
+.navbar-brand {
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+}
+
+/* estilo de hover para links sobre */
+.sobre a:hover {
+    /* importante para sobrepor outros estilos */
+    color: #0D0D0D !important;
+}
+
+/* ajusta quando a largura for maior que 768px */
+@media(min-width: 768px) {
+    #navbar-items {
+        display: flex;
+        min-width: 80%;
+    }
+}
+
+/* estilos para formularios de busca e newsletter */
+#search-form,
+#news-form {
+    width: 100%;
+    margin: 2em 0;
+}
+
+@media(min-width: 768px) {
+    #search-form,
+    #news-form {
+        width: 50%;
+        margin: 0;
+    }
+}
+
+/* estilos para campos de input em formulários */
+#search-form, 
+#news-form {
+    border: 2px solid #F2F2F2;
+    border-radius: 3px;
+    padding: 5px 15px;
+}
+
+/* estilos para campos de input quando focados */
+#search-form input:focus,
+#news-form input:focus {
+    background-color: transparent;
+    border: none;
+    color: #FFF;
+}
+
+/* estilos para campos de input quando focados */
+#search-form input:focus,
+#news-form input:focus {
+    box-shadow: none;
+}
+
+/* estilos para placeholders em campos de input */
+#search-form input::placeholder,
+#news-form input::placeholder {
+    color: #FFF;
+}
+
+/* _______________________________________ */
+/* estilos para barra de navegação inferior */
+#bottom-navbar-container .container {
+    color: #FFF;
+    font-weight: 600;
+}
+
+/* define tamanho do icone do botão para mostrar e esconder menu */
+.navbar-toggler {
+    font-size: 1.5em;
+}
